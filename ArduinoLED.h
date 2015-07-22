@@ -8,6 +8,8 @@ class ArduinoLED
 public:
 		ArduinoLED(uint8_t LEDPin);
 		void Strobe(uint8_t numFlashes,unsigned long delay_ms);
+		void High();
+		void Low();
 private:
 	uint8_t m_LEDPin;
 };

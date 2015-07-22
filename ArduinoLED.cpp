@@ -16,6 +16,15 @@ void ArduinoLED::Strobe(uint8_t numFlashes,unsigned long delay_ms)
 		digitalWrite(m_LEDPin,LOW);
 		strobeNum++;
 	}
-	delay(1000);
+	delay(100);
 }
-//Comment
+
+void ArduinoLED::High(){
+	digitalWrite(m_LEDPin, HIGH);
+	delay(100);
+}
+
+void ArduinoLED::Low(){
+	digitalWrite(m_LEDPin, LOW);
+	delay(100);
+}
